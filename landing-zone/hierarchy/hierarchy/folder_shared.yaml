@@ -1,0 +1,12 @@
+apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+kind: Folder
+metadata:
+  name: shared
+  annotations:
+    cnrm.cloud.google.com/blueprint: 'cnrm/landing-zone:hierarchy:simple/v0.4.0,kpt-fn'
+    internal.kpt.dev/upstream-identifier: blueprints.cloud.google.com|ResourceHierarchy|hierarchy|root-hierarchy
+  namespace: hierarchy
+spec:
+  displayName: shared
+  organizationRef:
+    external: '123456789012'
